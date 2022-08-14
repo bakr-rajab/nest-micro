@@ -1,0 +1,19 @@
+###auth app routes ******
+
+@auth_url= http://localhost:4001/auth
+
+GET  {{auth_url}}/
+
+
+### orders app routes ******
+
+@orders_url= http://localhost:4000/orders
+
+GET  {{orders_url}}/all
+
+
+###bills app routes ******
+
+@bills_url= http://localhost:4002/bills
+
+GET  {{bills_url}}/

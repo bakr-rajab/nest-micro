@@ -2,18 +2,21 @@ module.exports = {
     apps: [
         {
             name: 'microservice_orders',
-            script: '../dist/apps/orders/main.js',
+            script: 'ts-node ../apps/orders/src/main.ts',
         // script: '../dist/apps/orders/main.js',
             watch: true,
             // Delay between restart
+            // interpreter: '../node_modules/.bin/ts-node',
             watch_delay: 1000,
-            ignore_watch: ["node_modules", "dist"],
-            // node_args: '-r ../apps/orders/tsconfig.app.json',
-            kill_timeout: 3000,
+            // ignore_watch: ["node_modules", "dist"],
+            node_args: '-r ../apps/orders/tsconfig.app.json',
+            kill_timeout: 3,
             // source_map_support: true,
             error_file: '../log/orders.error.log',
             out_file: '../log/orders.out.log',
             env: {
+
+
                 NODE_ENV: 'development',
                 PORT: 4000,
             },
@@ -21,11 +24,11 @@ module.exports = {
         },
         {
             name: 'microservice_auth',
-            script: '../dist/apps/auth/main.js',
+            script: 'ts-node ../apps/auth/src/main.ts',
             watch: true,
             // Delay between restart
             watch_delay: 1000,
-            ignore_watch: ["node_modules","dist"],
+            ignore_watch: ["node_modules", "dist"],
 
             kill_timeout: 3000,
             error_file: '../log/auth.error.log',
@@ -37,9 +40,10 @@ module.exports = {
 
             // exec_mode: 'cluster',
         },
+
         {
             name: 'microservice_bills',
-            script: '../dist/apps/billing/main.js',
+            script: 'ts-node ../apps/billing/src/main.ts',
             watch: true,
             // Delay between restart
             watch_delay: 1000,
@@ -53,7 +57,7 @@ module.exports = {
                 PORT: 4002,
             },
 
-            // exec_mode: 'cluster',
+        //     // exec_mode: 'cluster',
         },
     ],
 };

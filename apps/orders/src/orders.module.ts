@@ -4,7 +4,7 @@ import { OrdersController } from './orders.controller';
 import { OrdersService } from './orders.service';
 
 @Module({
-  imports: [ConfigModule.forRoot()],
+  // imports: [ConfigModule.forRoot()],
   controllers: [OrdersController],
   providers: [OrdersService],
 })

@@ -1,5 +1,5 @@
 import { Model } from "objection";
-import BranchesModel from "./BranchModel";
+import {BranchesModel} from "./BranchModel";
 
 
 export default  class WorkTimes extends Model {

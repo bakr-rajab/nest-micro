@@ -1,7 +1,7 @@
 import { Model } from "objection";
 import OrdersModel from "./OrdersModel";
 import UserCopounWinnersModel from "./UserCopounWinners";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 export default  class UserCopounsModel extends Model {

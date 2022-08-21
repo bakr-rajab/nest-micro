@@ -1,25 +1,25 @@
 import { Model } from "objection";
 // import Depratments from "../Controllers/Depratments";
 // import RefuseApproveReasonsController from "../Controllers/RefuseApproveReasonsController";
-import BranchesModel from "./BranchModel";
-import Categories from "./Categories";
+import {BranchesModel} from "./BranchModel";
+import {Categories} from "./Categories";
 import DepartmentsModel from "./Departments";
 import FavortiesModel from "./Favorites";
 import MenuCategoriesModel from "./MenuCategories";
 import OffersModel from "./OffersModel";
-import OrdersModel from "./OrdersModel";
-import RatesModel from "./RatesModel";
+import {OrdersModel} from "./OrdersModel";
+import {RatesModel} from "./RatesModel";
 import RefuseApproveReasonsModel from "./RefuseApproveReasons";
 import restaurantApprovalAssginemtModel from "./restaurantApprovalAssginemt";
 import RestaurantsStatusModel from "./RestaurantsStatus";
 import RestaurantsTypes from "./RestaurantsTypes";
 import restaurant_attachmentsModel from "./ResturantAttachment";
 import TownsModel from "./Towns";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 
-export default class RestaurantModel extends Model {
+export  class RestaurantModel extends Model {
   id!:            number;
   name!:          string;
   name_en!:       string;

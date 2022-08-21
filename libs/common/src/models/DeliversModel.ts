@@ -1,7 +1,7 @@
 import { Model } from "objection";
-import BranchesModel from "./BranchModel";
+import {BranchesModel} from "./BranchModel";
 import DeliveryAttachmentsModel from "./DeliveryAttachments";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 

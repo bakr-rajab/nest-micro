@@ -1,8 +1,8 @@
 import { Model } from "objection";
-import Categories from "./Categories";
+import {Categories} from "./Categories";
 
 
-export default  class NewRequestsModel extends Model {
+export   class NewRequestsModel extends Model {
 
     static get tableName() {
       return 'new_requests';

@@ -2,7 +2,7 @@ import { Model } from "objection";
 import AreasModel from "./Areas";
 import CitiesModel from "./Cities";
 import MenuCategoriesItemsModel from "./MenuCategoriesItems";
-import RestaurantModel from "./RestaurantModel";
+import {RestaurantModel} from "./RestaurantModel";
 
 export default class MenuCategoriesModel extends Model {
 

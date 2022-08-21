@@ -1,7 +1,7 @@
 import { Model } from "objection";
 
 
-export default class RatesModel extends Model {
+export  class RatesModel extends Model {
 
   order_id!:number
   restaurant_id!:number

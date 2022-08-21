@@ -1,13 +1,13 @@
 import { Model } from "objection";
 import AreasModel from "./Areas";
 import BillsModel from "./Bills";
-import OrdersModel from "./OrdersModel";
-import RestaurantModel from "./RestaurantModel";
+import {OrdersModel} from "./OrdersModel";
+import {RestaurantModel} from "./RestaurantModel";
 import RestaurantsStatusModel from "./RestaurantsStatus";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 import WorkTimes from "./WorkingTimes";
 
-export default class BranchesModel extends Model {
+export  class BranchesModel extends Model {
   user!:UsersModel
   restaurantsId!:number
     static get tableName() { 

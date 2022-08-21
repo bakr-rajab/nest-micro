@@ -2,7 +2,7 @@ import { Model } from "objection";
 import BranchesModel from "./BranchModel";
 import DriversModel from "./DeliversModel";
 import OrdersModel from "./OrdersModel";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 

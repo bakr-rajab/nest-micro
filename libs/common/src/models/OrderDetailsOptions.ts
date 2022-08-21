@@ -1,5 +1,5 @@
 import { Model } from "objection";
-import OrdersModel from "./OrdersModel";
+import {OrdersModel} from "./OrdersModel";
 import MenuCategoriesItemsModel from "./MenuCategoriesItems";
 import MenuOptions from "./MenuOptions";
 

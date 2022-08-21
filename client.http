@@ -1,6 +1,6 @@
 ###auth app routes ******
 
-@auth_url= http://localhost:3001/api
+@auth_url= http://localhost:3004/api
 
 ### retrive all users
 GET  {{auth_url}}/users
@@ -17,11 +17,41 @@ Content-Type: application/json
 
 ### orders app routes ******
 
-@orders_url= http://localhost:4000/orders
+@orders_url= http://localhost:3000/orders
 
 GET  {{orders_url}}/all
 
+### create orders
+POST {{orders_url}}/create
+Content-Type: application/json
 
+
+{
+    "billing_address_id":191,
+    "branch_id":76,
+    "discount":0,
+    "notes":"",
+    "offer_discount":0.0,
+    "offer_id":0,
+    "order_details":[{"amount":1,"menu_categories_itemId":112,"notes":"","order_details_options":[],"total":16},
+        {"amount":1,"menu_categories_itemId":112,"notes":"","order_details_options":[],"total":16}],
+    "paymenttype_id":2,
+    "taxes":0,
+    "total":21.759999999999998,
+    "user_id":5397,
+    "wallet_discount":0.0,
+    "wallets_id":0
+    }
+
+
+### transfer point to wallet
+POST {{orders_url}}/transfer
+Content-Type: application/json
+
+{
+    "user_id":5397,
+    "count":120
+}
 ###bills app routes ******
 
 @bills_url= http://localhost:4002/bills

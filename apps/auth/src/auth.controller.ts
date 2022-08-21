@@ -11,8 +11,6 @@ export class AuthController {
 
     return this.authService.getAllUsers();
   }
-
-
   @Post('login')
   async login(@Body() req: any) {
     console.log("user",req);

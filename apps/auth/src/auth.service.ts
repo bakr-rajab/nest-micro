@@ -1,5 +1,5 @@
 import { Injectable } from '@nestjs/common';
-import UsersModel from "../../../libs/common/src/models/Users";
+import {generateCode, UsersModel} from "@app/common";
 import * as bcrypt from 'bcrypt';
 import { JwtService } from '@nestjs/jwt';
 import { CreateUserDto } from './dto/ctrateUser.dto';
@@ -43,19 +43,20 @@ export class AuthService {
     // async function generateOTP() {
     const hashedPassword = await bcrypt.hash(request.password, 10)
     // request.verify_code = rndInt;
-    const newUser:CreateUserDto={
+    const newUser ={
       username: request.username,
       email: request.email,
       password: hashedPassword,
       mobile:request.mobile,
-      verify_code:request.verify_code,
+      verify_code:generateCode(),//
       code:request.code
     }
     const user = await UsersModel.query().insert(newUser)
 
-    const body = (request)
+    // const body = (request)
     const accessToken = await this.generateToken({ user: request.username })
     console.log(request.email)
+
     if (user) {
       // await createAndSendConfirmationCodeMail(request.email, rndInt, "register-confirmation");
     }
@@ -64,7 +65,7 @@ export class AuthService {
     return { "user": user, "token": accessToken }
   }
 
-  private async generateToken(user) {
+  private async generateToken(user :any) {
     const token = await this.jwtService.signAsync(user, { secret: process.env.JWT_KEY });
     return token;
   }

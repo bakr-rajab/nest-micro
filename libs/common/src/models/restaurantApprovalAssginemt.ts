@@ -1,8 +1,8 @@
 import { Model } from "objection";
 // import Users from "../Controllers/Users";
-import BranchesModel from "./BranchModel";
+import {BranchesModel} from "./BranchModel";
 import DepartmentsModel from "./Departments";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 

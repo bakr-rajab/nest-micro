@@ -7,7 +7,10 @@ import { JwtModule, JwtService } from '@nestjs/jwt';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({ isGlobal: true }),
+    ConfigModule.forRoot({ 
+      isGlobal: true,
+      envFilePath: '.env',
+    }),
     DatabaseModule,
     JwtModule.register({
       secret: process.env.JWT_KEY,

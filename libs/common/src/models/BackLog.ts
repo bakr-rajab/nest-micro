@@ -1,6 +1,6 @@
 import { Model } from "objection";
 import BranchesModel from "./BranchModel";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 export default class BackLogsModel extends Model {
 

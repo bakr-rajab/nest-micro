@@ -1,7 +1,7 @@
 import { Model } from "objection";
 
 
-export default  class CopounSettingsModel extends Model {
+export  class CopounSettingsModel extends Model {
     title?:string
     number_copoun_weekly?:number
     number_copoun_monthly?:number

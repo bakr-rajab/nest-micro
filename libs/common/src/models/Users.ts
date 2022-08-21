@@ -1,31 +1,31 @@
 import { Model } from "objection";
 // import Address from "../Controllers/Address";
 import BillingAddressModel from "./Address";
-import BranchesModel from "./BranchModel";
+import {BranchesModel} from "./BranchModel";
 import DriversModel from "./DeliversModel";
 import DepartmentPositionsModel from "./DepartmentPositions";
 import DepartmentsModel from "./Departments";
-import OrdersModel from "./OrdersModel";
+import {OrdersModel} from "./OrdersModel";
 // import { PointsModel } from "./points";
-import RestaurantModel from "./RestaurantModel";
+import {RestaurantModel} from "./RestaurantModel";
 import UserCopounWinnersModel from "./UserCopounWinners";
 import UserGroupModel from "./UserGroup";
 
 
-export default class UsersModel extends Model {
+export class UsersModel extends Model {
 
 
 
-  user_group_id!: number
+  user_group_id?: number
   username!: string
   password!: string 
-  active!:number
+  active?:number
   email!:string
-  email_verified!:number
+  email_verified?:number
   mobile!:string
   department_id?:number
-  id: any;
-  verify_code!:number;
+  id?: any;
+  verify_code?:number;
   code!:number;
 
     static get tableName() {

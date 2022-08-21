@@ -1,19 +1,19 @@
 import { Model } from "objection"
 // import Branches from "../Controllers/Branches"
 import BillingAddressModel from "./Address"
-import BranchesModel from "./BranchModel"
+import {BranchesModel} from "./BranchModel"
 import DriversModel from "./DeliversModel"
 import OffersModel from "./OffersModel"
 import OrderDetailsModel from "./OrderDetails"
 import OrderStatus from "./OrderStatus"
-import PaymentTypesModel from "./PaymentTypes"
-import RestaurantModel from "./RestaurantModel"
-import UsersModel from "./Users"
-import WalletModel from "./Wallets"
+import {PaymentTypesModel} from "./PaymentTypes"
+import {RestaurantModel} from "./RestaurantModel"
+import {UsersModel} from "./Users"
+import {WalletModel} from "./Wallets"
 
-export default class OrdersModel extends Model {
+export  class OrdersModel extends Model {
 
-    id!: number 
+    id?: number 
     first_name!: string
     address!:string
     floor_number!:number
@@ -25,7 +25,7 @@ export default class OrdersModel extends Model {
     area_id!: number
     restaurant_id!: number
     order_details?:OrderDetailsModel[]
-order_status_id?:number
+    order_status_id?:number
     static get tableName() {
         return 'orders';
       }

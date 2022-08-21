@@ -2,12 +2,17 @@ import { Model } from "objection";
 import AreasModel from "./Areas";
 import CitiesModel from "./Cities";
 import TransactionsModel from "./Transactions";
-import UsersModel from "./Users";
-import WalletTypesModel from "./WalletTypes";
+import {UsersModel} from "./Users";
+import {WalletTypesModel} from "./WalletTypes";
 
 
-export default class walletSettingsModel extends Model {
+export class walletSettingsModel extends Model {
 
+  gift_discount!:number;
+  gift_max!:number
+  gift_min!:number
+  wallit_type_id!: number
+  
     static get tableName() {
       return 'walletSettings';
     }

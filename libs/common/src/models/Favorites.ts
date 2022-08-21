@@ -1,5 +1,5 @@
 import { Model } from "objection";
-import RestaurantModel from "./RestaurantModel";
+import {RestaurantModel} from "./RestaurantModel";
 
 export default class FavortiesModel extends Model {
 

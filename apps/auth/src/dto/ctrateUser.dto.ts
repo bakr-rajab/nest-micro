@@ -12,9 +12,6 @@ export class CreateUserDto {
 
     @IsNotEmpty()
     readonly code: number;
-    
-    @IsNotEmpty()
-    readonly verify_code: number;
 
     @IsNotEmpty()
     @IsEmail()

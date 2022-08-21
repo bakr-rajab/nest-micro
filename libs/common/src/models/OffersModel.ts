@@ -1,7 +1,7 @@
 import { Model } from "objection";
 import DepartmentsModel from "./Departments";
 import MenuCategoriesItemsModel from "./MenuCategoriesItems";
-import RestaurantModel from "./RestaurantModel";
+import {RestaurantModel} from "./RestaurantModel";
 
 export default  class OffersModel extends Model {
 

@@ -2,11 +2,11 @@ import { Model } from "objection";
 // import PaymentTypes from "../Controllers/PaymentTypes";
 import AreasModel from "./Areas";
 import CitiesModel from "./Cities";
-import OrdersModel from "./OrdersModel";
-import PaymentTypesModel from "./PaymentTypes";
-import UsersModel from "./Users";
-import WalletModel from "./Wallets";
-import WalletTypesModel from "./WalletTypes";
+import {OrdersModel} from "./OrdersModel";
+import {PaymentTypesModel} from "./PaymentTypes";
+import {UsersModel} from "./Users";
+import {WalletModel} from "./Wallets";
+import {WalletTypesModel} from "./WalletTypes";
 
 
 export default class TransactionsModel extends Model {

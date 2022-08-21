@@ -1,6 +1,6 @@
 import { Model } from "objection";
 
-export default  class ConfirgrationsModel extends Model {
+export  class ConfirgrationsModel extends Model {
     percentage: any;
   value: any;
 

@@ -1,7 +1,8 @@
 # compiled output
 /dist
 /node_modules
-
+start
+ecosystem.config.config.js
 # Logs
 logs
 *.log

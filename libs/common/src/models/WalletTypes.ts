@@ -1,10 +1,10 @@
 import { Model } from "objection";
 import AreasModel from "./Areas";
 import CitiesModel from "./Cities";
-import walletSettingsModel from "./WalletSettings";
+import {walletSettingsModel} from "./WalletSettings";
 
 
-export default class WalletTypesModel extends Model {
+export  class WalletTypesModel extends Model {
 
     static get tableName() {
       return 'wallettypes';

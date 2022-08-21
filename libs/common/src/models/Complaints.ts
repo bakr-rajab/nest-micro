@@ -1,6 +1,6 @@
 import { Model } from "objection";
 import ComplaintsReplyModel from "./ComplaintsReply";
-import UsersModel from "./Users";
+import {UsersModel} from "./Users";
 
 
 export default  class ComplaintsModel extends Model {

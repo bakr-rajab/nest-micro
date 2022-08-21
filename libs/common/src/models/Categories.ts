@@ -1,8 +1,8 @@
 import { Model } from "objection";
-import NewRequestsModel from "./NewRequests";
-import RestaurantModel from "./RestaurantModel";
+import {NewRequestsModel} from "./NewRequests";
+import {RestaurantModel} from "./RestaurantModel";
 
-export default  class Categories extends Model {
+export class Categories extends Model {
 
   percentage?:number
 

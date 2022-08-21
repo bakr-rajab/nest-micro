@@ -1,5 +1,5 @@
 import { Model } from "objection";
-import BranchesModel from "./BranchModel";
+import {BranchesModel} from "./BranchModel";
 import TownsModel from "./Towns";
 
 export default class AreasModel extends Model {

@@ -1,9 +1,19 @@
 ###auth app routes ******
 
-@auth_url= http://localhost:4001/auth
+@auth_url= http://localhost:3001/api
 
-GET  {{auth_url}}/
+### retrive all users
+GET  {{auth_url}}/users
 
+
+### login
+POST {{auth_url}}/login
+Content-Type: application/json
+
+{
+    "username":"bakr",
+    "password":"123456"
+}
 
 ### orders app routes ******
 

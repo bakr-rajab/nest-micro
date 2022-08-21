@@ -1,17 +1,17 @@
 # compiled output
 /dist
 /node_modules
-start
-ecosystem.config.config.js
+
 # Logs
-logs
+/logs
 *.log
 npm-debug.log*
 pnpm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 lerna-debug.log*
-
+Archive
+*.zip
 # OS
 .DS_Store
 
